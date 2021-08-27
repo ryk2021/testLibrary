@@ -21,6 +21,7 @@ testLibrary
 *******************************************************  
       https://library2021-api.herokuapp.com/api/user
         Example>>>>>
+        
             {
             "fname" : "Juan",
             "lname":"Lopez",
@@ -33,6 +34,7 @@ testLibrary
 *******************************************************                
           https://library2021-api.herokuapp.com/api/user/6127dcbbb7b04a42b9d6380c
            Example>>>>>
+           
             {
             "fname" : "Juan Antonio",
             "lname":"Lopez Rodriguez",
@@ -49,8 +51,8 @@ https://library2021-api.herokuapp.com/api/books
 *************** add book Method : POST **************
 ******************************************************* 
 https://library2021-api.herokuapp.com/api/books
-
     Example>>>>
+    
         {
         "title": "Don quijote de la mancha",
         "author": "Miguel de Cervantes",
@@ -62,8 +64,8 @@ https://library2021-api.herokuapp.com/api/books
 *************** add book Method : PUT **************
 ******************************************************* 
 https://library2021-api.herokuapp.com/api/books/6127bfbe093f8d984c7213a2
-
        Example>>>>
+       
         {
         "title": "Don quijote ",
         "author": "Miguel de Cervantes",
@@ -80,18 +82,18 @@ https://library2021-api.herokuapp.com/api/loans
 *******************************************************
 *************** add loans Method : POST **************
 *******************************************************     
-https://library2021-api.herokuapp.com/api/loans
+https://library2021-api.herokuapp.com/api/loans  Example>>>>
 
-{  
-    "idUser":"6127e2852712f7b150b42964",
-    "idBook":"6127bfbe093f8d984c7213a2",
-    "status":0
-}
+      {  
+      "idUser":"6127e2852712f7b150b42964",
+      "idBook":"6127bfbe093f8d984c7213a2",
+      "status":0
+      }
 
 *******************************************************
 *************** EDIT loans Method : PUT **************
 *******************************************************     
-https://library2021-api.herokuapp.com/api/loans
+https://library2021-api.herokuapp.com/api/loans Example>>>>
 
 {  
     
