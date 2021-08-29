@@ -196,6 +196,13 @@ app.get('/api/loans/:id',(req,res)=>{
     })
 })
 
+app.get('/api/loans/book/:id',(req,res)=>{    
+    const { id } = req.params
+    Loans.find({idBook:id}).then(loans => {
+        res.json(loans)        
+    })
+})
+
 app.post('/api/loans',(req,res)=>{ 
     const parameters = req.body
 
