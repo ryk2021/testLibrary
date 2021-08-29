@@ -183,7 +183,7 @@ app.put('/api/user/:id',(req,res)=>{
                 //Loans
 /****************************************/
 app.get('/api/loans',(req,res)=>{    
-    User.find({}).then(loan => {
+    Loans.find({}).then(loan => {
         res.json(loan)        
     })
 })
@@ -191,7 +191,7 @@ app.get('/api/loans',(req,res)=>{
 app.get('/api/loans/:id',(req,res)=>{    
     const { id } = req.params
 
-    User.find({idUser:id}).then(loans => {
+    Loans.find({idUser:id}).then(loans => {
         res.json(loans)        
     })
 })
