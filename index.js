@@ -23,13 +23,20 @@ app.post('/api/login',(req,res)=> {
     const parameter = req.body
     console.log(parameter)
     User.find({email:parameter.email,password:parameter.password})
+    .select({
+        'password':0,
+        'date':0,
+        'status':0
+    })
     .then(user => {
-        console.log(user.length)
+        console.log(user.length)        
+        console.log(user.toString())            
         if(user.length>0){
-            res.json({code: "OK"})        
+            
+            res.json(user)        
         }        
         else{
-            res.json({code: "ERROR"})        
+            res.json({})        
         }        
     })
 })
